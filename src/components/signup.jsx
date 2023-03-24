@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Input from './input';
 import axios from 'axios';
-import ChangePassword from './resetpass';
 import "../assets/Signup.css"
 
 function SignIn() {
@@ -52,15 +51,16 @@ function SignIn() {
     }
   };
 
+ 
   const handleForgotPassword = async () => {
     try {
       const response = await axios.patch('http://localhost:8081/user/password', {
         email: forgotPasswordEmail
       });
       console.log(response.data);
-      setSuccess(<ChangePassword setSuccess={setSuccess} />);
+      
     } catch (error) {
-      setError(<ChangePassword setSuccess={setSuccess} />);
+      setError("Please Try Again")
     }
   };
   

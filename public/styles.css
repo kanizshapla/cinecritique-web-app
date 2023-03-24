@@ -104,6 +104,7 @@ color: #fff;
   display: flex;
   justify-content: center;
 }
+
 .Top-Menu a {
   padding: 0 50px;
   font-family: 'Montserrat';
@@ -187,3 +188,53 @@ color: #fff;
   border: 2px;
   border-color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardContainer {
+  margin: 30px 10px;
+  display:inline-block;
+  }
+  .cardHeader {
+  font-size: 20px;
+  }
+  .cardBody {
+  font-size: 14px;
+  }
+  .cardButton {
+  width: 150px;
+  height: 30px;
+  font-size: 12px;
+  }
+  .Top-Menu a {
+  padding: 0 20px;
+  font-size: 14px;
+  }
+  .home-contents {
+  font-size: 16px;
+  padding: 0 20px;
+  }
+  .home-images {
+  height: 500px;
+  }
+  .Top-Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  .content-about {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  }

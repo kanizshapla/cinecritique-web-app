@@ -29,10 +29,10 @@
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
   
   .form-group input:focus,
@@ -54,4 +54,70 @@
   button[type='submit']:hover {
     background-color: #1aa3af;
   }
-  
+ 
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Adjust the height according to your design */
+  }
+
+  .container {
+    padding-bottom: 50px; /* Same as the height of the footer */
+  }
+
+  /* Media query for screens smaller than 576px */
+@media (max-width: 575.98px) {
+  .movie-review-form {
+    padding-top: 50px;
+    height: auto;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  button[type='submit'] {
+    font-size: 14px;
+  }
+}
+
+/* Media query for screens between 576px and 767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .movie-review-form {
+    padding-top: 60px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  button[type='submit'] {
+    font-size: 14px;
+  }
+}
+
+/* Media query for screens between 768px and 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .movie-review-form {
+    padding-top: 60px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px;
+  }
+
+  button[type='submit'] {
+    font-size: 16px;
+  }
+}
+
+/* Media query for screens larger than 992px */
+@media (min-width: 992px) {
+  .movie-review-form {
+    padding-top: 70px;
+  }
+}
